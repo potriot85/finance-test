@@ -4,7 +4,7 @@ import arrowUp from "../../images/arrowUp.png";
 import arrowDown from "../../images/arrowDown.jpg";
 import { usePrevious } from "../../utils/functions";
 
-const Yield = (props) => {
+const Devidents = (props) => {
   const prevCount = usePrevious(props.props);
   let difference = props.props - prevCount;
   if (difference >= 0) {
@@ -22,4 +22,4 @@ const Yield = (props) => {
     );
   }
 };
-export default Yield;
+export default Devidents;
