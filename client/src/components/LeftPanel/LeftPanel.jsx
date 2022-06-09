@@ -3,11 +3,13 @@ import { Formik, Form, Field } from "formik";
 import { setTimeUpdate } from "../../redux/dataReducer";
 import { useDispatch } from "react-redux";
 import Button from "react-bootstrap/Button";
+import s from "./LeftPanel.module.css";
 
 const LeftPanel = () => {
   const dispatch = useDispatch();
   return (
-    <div>
+    <div className={s.leftPanel}>
+      <h5>Please select time period for updates of Tickers</h5>
       <Formik
         initialValues={{ time: "" }}
         onSubmit={(value) => {
